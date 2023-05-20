@@ -15,6 +15,8 @@ https://github.com/SaurabhSRP/NewsApp_Flask/assets/108528607/f62b21b3-83e5-4118-
 - ***Packages:***  Flask , Beautifulsoup4, urllib, Newspaper3k (web scrapper) 
 - ***Frontend*** HTML & CSS
 
+***Install all requirements for the web app using*** pip install -r requirements.txt
+
 # Conclusion
 - There is a huge scope of improvement in the present code.
 - BERT can give us control over number of words and also derive meanigful sentences.
