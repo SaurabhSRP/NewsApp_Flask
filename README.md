@@ -9,3 +9,14 @@
 
 https://github.com/SaurabhSRP/NewsApp_Flask/assets/108528607/f62b21b3-83e5-4118-ab70-4f85015a63a1
 
+# Code and Resources Used
+- ***Python Version:*** 3.8
+- ***Data:*** Google news API 
+- ***Packages:***  Flask , Beautifulsoup4, urllib, Newspaper3k (web scrapper) 
+- ***Frontend*** HTML & CSS
+
+# Conclusion
+- There is a huge scope of improvement in the present code.
+- BERT can give us control over number of words and also derive meanigful sentences.
+- As this is a demostration, feel free to drop in comments and suggestions.
+
