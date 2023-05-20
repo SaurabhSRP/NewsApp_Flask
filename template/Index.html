@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+    <script src="https://kit.fontawesome.com/0395e12345.js" crossorigin="anonymous"></script>
+    <title>News App MainPage</title>
+</head>
+<body>
+<div id="home" class="banner">
+    <div class="navbar">
+        <img src="{{url_for('static',filename='NEWS.png')}}" class="logo">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#sections">Sections</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <h1>WELCOME TO MY NEWS APP</h1>
+        <p>To all those readers who want to skim through the top news of the day , This is the App for you.</p>
+        <p>This project uses Google API for extracting the news from various platform and Newspaper3k library for further processing and summerisation.</p>
+        <p>Initial idea was to use BERT based summerizer but due to lack of processing power on my local system, i used Newspaper3k's in house summerizer.</p>
+        <p>But to those who have the processing power , i have attached a python file which shows how to use BERT summerizer for the current project.</p>
+        <p>You just have to replace the code with BERT as shown in my python file (check out in my github repo).</p>
+        <div>
+            <button type="button" onclick="window.location.href='https://github.com/SaurabhSRP/NewsApp_Flask';"><span></span>GitHub Repo</button>
+        </div>
+    </div>
+
+
+</div>
+
+<div id="sections" class="sections">
+    <h1>News Sections</h1>
+    <div class="container">
+        <div class="box">
+            <img src="{{url_for('static',filename='politics.jpg')}}">
+            <h3>Politics</h3>
+            <p>Want to know whats happening in your country and around the world , look no further just click the below button</p>
+            <form action="/politics" method="get">
+                <input type="submit" value="Click here">
+            </form>
+        </div>
+        <div class="box">
+            <img src="{{url_for('static',filename='finance.jpg')}}">
+            <h3>Finance</h3>
+            <p>Your next Finance decision is just a click away</p>
+            <form action="/finance" method="get">
+                <input type="submit" value="Click here">
+            </form>
+        </div>
+        <div class="box">
+            <img src="{{url_for('static',filename='sports.png')}}">
+            <h3>Sports</h3>
+            <p>Your Favourite team might have just won a match , do check out whats happening in the world of sports</p>
+            <form action="/sports" method="get">
+                <input type="submit" value="Click here">
+            </form>
+        </div>
+        <div class="box">
+            <img src="{{url_for('static',filename='entertainment.png')}}">
+            <h3>Entertainment</h3>
+            <p>There's a new movie out in Hollywood , and it could be a big hit. Click to know more</p>
+            <form action="/entertainment" method="get">
+                <input type="submit" value="Click here">
+            </form>
+        </div>
+    </div>
+</div>
+<div class="copyright">
+        <p>Copyright Saurabh. Made with love <i class="fa-solid fa-heart"></i></p>
+    </div>
+
+</body>
+

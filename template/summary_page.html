@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='summary_style.css')}}">
+    <script src="https://kit.fontawesome.com/0395e12345.js" crossorigin="anonymous"></script>
+</head>
+<body>
+ <div class="content">
+    {%for i in range(0, len)%}
+    <h1>{{title[i]}}</h1>
+    <img src= {{ image[i] }}>
+    <p>{{best_summary[i]}}</p>
+        <!---<a href="https://news.google.com/rss/articles/CBMieWh0dHBzOi8vd3d3LmZveG5ld3MuY29tL3BvbGl0aWNzL2JsaW5rZW4tc2F5cy1pLWRvbnQtZG8tcG9saXRpY3MtZGVzcGl0ZS1zcGVuZGluZy1kZWNhZGVzLXBvbGl0aWNzLWRvbmF0aW5nLWxhdmlzaGx5LWRlbXPSAX1odHRwczovL3d3dy5mb3huZXdzLmNvbS9wb2xpdGljcy9ibGlua2VuLXNheXMtaS1kb250LWRvLXBvbGl0aWNzLWRlc3BpdGUtc3BlbmRpbmctZGVjYWRlcy1wb2xpdGljcy1kb25hdGluZy1sYXZpc2hseS1kZW1zLmFtcA?oc=5">https://news.google.com/rss/articles/CBMieWh0dHBzOi8vd3d3LmZveG5ld3MuY29tL3BvbGl0aWNzL2JsaW5rZW4tc2F5cy1pLWRvbnQtZG8tcG9saXRpY3MtZGVzcGl0ZS1zcGVuZGluZy1kZWNhZGVzLXBvbGl0aWNzLWRvbmF0aW5nLWxhdmlzaGx5LWRlbXPSAX1odHRwczovL3d3dy5mb3huZXdzLmNvbS9wb2xpdGljcy9ibGlua2VuLXNheXMtaS1kb250LWRvLXBvbGl0aWNzLWRlc3BpdGUtc3BlbmRpbmctZGVjYWRlcy1wb2xpdGljcy1kb25hdGluZy1sYXZpc2hseS1kZW1zLmFtcA?oc=5</a>-->
+    <div class="but">
+        <a href={{ link[i] }}>
+            <button type="button"><span></span>Read More!!</button>
+        </a>      
+    </div>
+    {%endfor%}
+ </div>
+
+
+</body>
+</html>
