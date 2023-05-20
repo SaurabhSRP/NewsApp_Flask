@@ -20,3 +20,5 @@ https://github.com/SaurabhSRP/NewsApp_Flask/assets/108528607/f62b21b3-83e5-4118-
 - BERT can give us control over number of words and also derive meanigful sentences.
 - As this is a demostration, feel free to drop in comments and suggestions.
 
+Hope you like it :) would love to hear your views on this 
+
