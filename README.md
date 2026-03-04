@@ -1,26 +1,139 @@
-# NewsApp_Flask
+# 📰 Real-Time News Summarisation Web Application
 
-# Project Overview
-- We all have come across multiple Apps which provides news in a short and summarized format to the user. The news is showcased in 60-100 words summary , which is easy to read and grasp.
-- Keeping the above concept in mind. I have built a web app which provides real time news in a short summarized format based on differnt sections such as Politics, Sports , Finance , Entertainment.
-- This Web app demonstrate the ability to web scrap real time data from Google news API , clean the data, process and summarize it using python and NLP concepts.
-- Initial idea was to use BERT based summarizer but due to hardware limitations on my local system. i have used Newspaper3k based summarizer but i have attached a python file to those who want to use BERT in the current project . All you have to do is replace the exisiting code with the one in the python file.
-- News have been limited to top 5 in the existing project.
+A Flask-based web application that extracts real-time news articles and generates concise summaries using Natural Language Processing (NLP).
+
+This project demonstrates an end-to-end pipeline including data extraction, web scraping, text preprocessing, NLP-based summarisation, and web deployment.
+
+---
+
+## 🚀 Demo
 
 https://github.com/SaurabhSRP/NewsApp_Flask/assets/108528607/f62b21b3-83e5-4118-ab70-4f85015a63a1
 
-# Code and Resources Used
-- ***Python Version:*** 3.8
-- ***Data:*** Google news API 
-- ***Packages:***  Flask , Beautifulsoup4, urllib, Newspaper3k (web scrapper) 
-- ***Frontend*** HTML & CSS
+---
 
-***Install all requirements for the web app using*** pip install -r requirements.txt
+## 📌 Project Overview
 
-# Conclusion
-- There is a huge scope of improvement in the present code.
-- BERT can give us control over number of words and also derive meanigful sentences.
-- As this is a demostration, feel free to drop in comments and suggestions.
+We often rely on news applications that provide short and readable summaries of lengthy articles.  
+This project replicates that concept by building a web application that:
 
-Hope you like it :) would love to hear your views on this 
+- Fetches real-time news articles  
+- Extracts article content  
+- Cleans and processes raw text  
+- Generates 60–100 word summaries  
+- Displays results in a user-friendly interface  
 
+The application currently limits output to the top 5 articles per category to optimise performance and readability.
+
+---
+
+## 🛠 Tech Stack
+
+**Backend**
+- Python 3.8
+- Flask
+
+**Data Processing & NLP**
+- Newspaper3k
+- BeautifulSoup4
+- urllib
+
+**Frontend**
+- HTML
+- CSS
+
+**Data Source**
+- Google News API
+
+---
+
+## ⚙️ System Architecture
+
+1. Fetch real-time news using Google News API  
+2. Extract full article content using web scraping  
+3. Clean and preprocess text data  
+4. Apply NLP-based summarisation  
+5. Render summarised results in Flask web interface  
+
+---
+
+## 🧠 NLP Approach
+
+The original design aimed to implement a BERT-based transformer summarisation model for improved contextual understanding.
+
+Due to local hardware constraints, the deployed version uses Newspaper3k’s built-in summarisation engine.
+
+A separate Python file containing a BERT-based implementation is included for future scalability and enhancement.
+
+---
+
+## 📊 Key Features
+
+✔ Real-time news extraction  
+✔ Automated data cleaning and preprocessing  
+✔ NLP-based text summarisation  
+✔ Category-based filtering (Politics, Sports, Finance, Entertainment)  
+✔ Optimised response time (Top 5 articles per category)  
+✔ Modular and extensible code structure  
+
+---
+
+## 🔮 Future Enhancements
+
+- Deploy transformer-based summarisation using HuggingFace / BERT  
+- Cloud deployment (Azure / Render)  
+- Add sentiment analysis for news articles  
+- Improve summarisation quality with adjustable word limits  
+- Implement database storage for historical news tracking  
+
+---
+
+## 📂 How to Run Locally
+
+Clone the repository:
+
+```bash
+git clone https://github.com/SaurabhSRP/NewsApp_Flask.git
+cd NewsApp_Flask
+```
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+Run the application:
+
+```bash
+python app.py
+```
+
+Open your browser and navigate to:
+
+```
+http://127.0.0.1:5000/
+```
+
+---
+
+## 📎 Repository Link
+
+https://github.com/SaurabhSRP/NewsApp_Flask
+
+---
+
+## 📈 What This Project Demonstrates
+
+- End-to-end data pipeline development  
+- Real-time API integration  
+- Web scraping and text preprocessing  
+- Applied NLP for text summarisation  
+- Backend development using Flask  
+- Ability to design scalable data applications  
+
+---
+
+### 👤 Author
+Saurabh Parave  
+Master of Data Science – RMIT University  
